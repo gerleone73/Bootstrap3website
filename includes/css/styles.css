@@ -14,6 +14,8 @@ Notes:
    Layout
    -------------------------------------- */
 
+
+
    #features {
       text-align:center;
    }
@@ -24,6 +26,13 @@ Notes:
 
    #input-message{
       margin-bottom: 15px;
+   }
+
+   footer {
+      background: #333;
+      color:#eee;
+      font-size: 11px;
+      padding:20px;
    }
 
 /* --------------------------------------
@@ -97,9 +106,38 @@ Notes:
 
    .tabbable img.thumbnail{
       margin: 0 20px 10px 0;
-
    }
 
+   .thumbnails {
+      margin: 20px 0;
+   }
+
+   .thumbnail{
+      position: relative;
+   }
+
+   .thumbnail h3{
+      font-size: 16px;
+      margin: 0 0 10px;
+      line-height:20px;
+   }
+   
+   .thumbnail .price{
+      position: absolute;
+      top:-16px;
+      right:-10px;
+      font-size: 22px;
+      padding: 10px;
+   }
+
+   .price sup{
+      font-weight: normal;
+      font-size: 12px;
+   }
+
+   .thumbnail span.gyphicon{
+      margin-right: 5px;
+   }
 /* --------------------------------------
    Media Queries
    -------------------------------------- */
@@ -107,7 +145,17 @@ Notes:
 /* Portrait & landscape phone */
 @media (max-width: 480px) {
 
-  
+  .thumbnail .price {
+   font-size: 14px;
+   padding: 5px;
+   top:-8px;
+   right:-5px
+  }
+
+  .thumbnail .price sup{
+   font-size: 10px;
+  }
+   
 	
 }
 
