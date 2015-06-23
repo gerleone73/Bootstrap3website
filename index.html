@@ -1,0 +1,349 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <!-- Website Title & Description for Search Engine purposes -->
+    <title></title>
+    <meta name="description" content="">
+    <!-- Mobile viewport optimized -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <!-- Bootstrap CSS -->
+    <link href="bootstrap/css/bootstrap.min.css" rel="stylesheet">
+    <link href="includes/css/bootstrap-glyphicons.css" rel="stylesheet">
+    <!-- Custom CSS -->
+    <link href="includes/css/styles.css" rel="stylesheet">
+    <!-- Include Modernizr in the head, before any other Javascript -->
+    <script src="includes/js/modernizr-2.6.2.min.js"></script>
+</head>
+
+<body>
+<div class="container" id="main">
+  <!-- NAVIGATION -->
+  <div class="navbar navbar-fixed-top">
+      <!-- fixed so no contrained by container -->
+      <div class="container">
+          <button class="navbar-toggle" data-target=".navbar-responsive-collapse" data-toggle="collapse" type="button">
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+          </button>
+          <a class="navbar-brand" href="/"><img src="images/logo.png" alt="Your Logo"></a>
+          <div class="nav-collapse collapse navbar-responsive-collapse">
+              <ul class="nav navbar-nav">
+                  <li class="active">
+                      <a href="#">Home</a>
+                  </li>
+                  <li class="dropdown">
+                      <a href="#" class="dropdown-toggle" data-toggle="dropdown">Services <span class="caret"></span></a>
+                      <ul class="dropdown-menu">
+                        <li>
+                            <a href="#">Web Design</a>
+                        </li>
+                        <li>
+                            <a href="#">Web Development</a>
+                        </li>
+                        <li>
+                            <a href="#">UX/UI</a>
+                        </li>
+                        <li class="divider"></li>
+                        <li class="dropdown-header">More Services</li>
+                        <li>
+                            <a href="#">Content Creation</a>
+                        </li>
+                        <li>
+                            <a href="#">SEO</a>
+                        </li>
+                        <li>
+                            <a href="#">Logo Design</a>
+                        </li>
+                      </ul>
+                      <!-- dropdown menu -->
+                  </li>
+                  <!-- dropdown -->
+              </ul>
+              <form class="navbar-form pull-left">
+                  <!-- Note pull-left-->
+                  <input type="text" class="form-control" placeholder="Search this site..." id="searchInput">
+                  <button type="submit" class="btn btn-default"><span class="glyphicon glyphicon-search"></span></button>
+              </form>
+              <ul class="nav navbar-nav pull-right">
+                  <!--Note pull-right -->
+                  <li class="dropdown">
+                      <a href="#" class="dropdown-toggle" data-toggle="dropdown"><span class="glyphicon glyphicon-user"></span> &nbsp;My Account&nbsp;<span class="caret"></span></a>
+                      <ul class="dropdown-menu">
+                        <li>
+                            <a href="#"><span class="glyphicon glyphicon-wrench"></span>&nbsp;Settings</a>
+                        </li>
+                        <li>
+                            <a href="#"><span class="glyphicon glyphicon-refresh"></span>&nbsp;UpdateProfile</a>
+                        </li>
+                        <li>
+                            <a href="#"><span class="glyphicon glyphicon-briefcase"></span>&nbsp;Billing</a>
+                        </li>
+                        <li class="divider"></li>
+                        <li>
+                            <a href="#"><span class="glyphicon glyphicon-off"></span>&nbsp;Signout</a>
+                        </li>
+                      </ul>
+                  </li>
+              </ul>
+              <!-- nav pull-right -->
+          </div>
+          <!-- nav-collapse -->
+      </div>
+      <!-- container -->
+  </div>
+  <!-- navbar -->
+
+  <!-- CAROUSEL -->
+  <div class="carousel slide" id="myCarousel">
+      <!-- Indicators -->
+      <ol class="carousel-indicators">
+          <li class="active" data-slide-to="0" data-target="#myCarousel"></li>
+          <li data-slide-to="1" data-target="#myCarousel"></li>
+          <li data-slide-to="2" data-target="#myCarousel"></li>
+      </ol>
+      <!-- Wrapper for slides -->
+      <div class="carousel-inner">
+          <div class="item active" id="slide1">
+              <div class="carousel-caption">
+                  <h4>Bootstrap 3</h4>
+                  <p>Learn how to build your first responsive website with the brand new Twitter Bootstrap 3!</p>
+              </div>
+              <!-- end carousel-caption-->
+          </div>
+          <!-- end item -->
+          <div class="item" id="slide2">
+              <div class="carousel-caption">
+                  <h4>Learn to code a website in 4-hours!</h4>
+                  <p>PSD to HTML5 &amp; CSS3 is a popular Udemy course that has helped thousands of aspiring web designers launch their web design career.</p>
+              </div>
+              <!-- end carousel-caption-->
+          </div>
+          <!-- end item -->
+          <div class="item" id="slide3">
+              <div class="carousel-caption">
+                  <h4>Web Hosting 101</h4>
+                  <p>Learn how to buy a perfect domain name and hosting package, and get your website live on the web with ease.</p>
+              </div>
+              <!-- end carousel-caption-->
+          </div>
+          <!-- end item -->
+      </div>
+      <!-- carousel-inner -->
+      <!-- Controls -->
+      <a class="left carousel-control" data-slide="prev" href="#myCarousel"><span class="icon-prev"></span></a>
+      <a class="right carousel-control" data-slide="next" href="#myCarousel"><span class="icon-next"></span></a>
+  </div>
+  <!-- end myCarousel -->
+
+  <!-- CALLOUT -->
+
+  <div class="row" id="bigCallout">
+      <div class="col-12">
+          <!-- Alert -->
+          <div class="alert alert-success alert-block fade in" id="successAlert">
+              <!-- fade in is jquery helper class -->
+              <button type="button" class="close" data-dismiss="alert">&times;</button>
+              <h4>Success!</h4>
+              <p>You just made this element display by using jQuery. Click the "x" in the top right corner to close this bad boy.</p>
+          </div>
+          <!-- end alert -->
+          <!-- Visible only on small devices -->
+          <div class="well well-small visible-sm">
+              <a href="" class="btn btn-large btn-block btn-default"><span class="glyphicon glyphicon-phone">&nbsp;Give us a call</span></a>
+          </div>
+          <!-- well-small -->
+          <div class="well">
+              <div class="page-header">
+                  <h1>A Fancy Header <small>A subheader for extra awesome</small></h1>
+              </div>
+              <!-- page-header -->
+              <p class="lead">Solid leading copy will help keep your users engaged. US ethis area to come up with something nice and enaging.</p>
+              <a href="" class="btn btn-large btn-primary" id="alertMe">Click on this nice big button</a>
+              <a href="" class="btn btn-large btn-link">or click a seconary link</a>
+          </div>
+          <!-- well -->
+      </div>
+      <!-- col-12 -->
+  </div>
+  <!-- row bigCallout -->
+  <div class="row" id="featuresHeading">
+      <div class="col-12">
+          <h2>More Features</h2>
+          <p class="lead">Migas drinking vinegar slow-carb, fingerstache VHS Bushwick dreamcatcher messenger bag Austin Thundercats distillery</p>
+      </div>
+  </div>
+  <!-- row featuresHeading -->
+  <div class="row" id="features">
+      <div class="col-sm-4 feature">
+          <div class="panel">
+              <div class="panel-heading">
+                  <h3 class="panel-title">Markup with HTML</h3>
+              </div>
+              <!-- panel-heading -->
+              <img src="images/badge_html5.jpg" alt="html5 badge" class="img-circle">
+              <p>Migas drinking vinegar slow-carb, fingerstache VHS Bushwick dreamcatcher messenger bag Austin Thundercats distillery</p>
+              <a href="" target="_blank" class="btn btn-warning btn-block">Learn HTML5</a>
+          </div>
+          <!-- panel -->
+      </div>
+      <!-- col md 4 -->
+      <div class="col-sm-4 feature">
+          <div class="panel">
+              <div class="panel-heading">
+                  <h3 class="panel-title">Style with CSS3</h3>
+              </div>
+              <!-- panel-heading -->
+              <img src="images/badge_css3.jpg" alt="css3 badge" class="img-circle">
+              <p>Migas drinking vinegar slow-carb, fingerstache VHS Bushwick dreamcatcher messenger bag Austin Thundercats distillery</p>
+              <a href="" target="_blank" class="btn btn-danger btn-block">Learn CSS3</a>
+          </div>
+          <!-- panel -->
+      </div>
+      <div class="col-sm-4 feature">
+          <div class="panel">
+              <div class="panel-heading">
+                  <h3 class="panel-title">Design with Bootstrap</h3>
+              </div>
+              <!-- panel-heading -->
+              <img src="images/badge_bootstrap.jpg" alt="bootstrap badge" class="img-circle">
+              <p>Migas drinking vinegar slow-carb, fingerstache VHS Bushwick dreamcatcher messenger bag Austin Thundercats distillery</p>
+              <a href="" target="_blank" class="btn btn-info btn-block">Learn Bootstrap</a>
+          </div>
+          <!-- panel -->
+      </div>
+  </div>
+  <!-- row features -->
+  <div class="row" id="moreInfo">
+      <div class="col-sm-6">
+          <h3>Tabbable Content</h3>
+          <div class="tabbable">
+              <ul class="nav nav-tabs">
+                  <li class="active"><a href="#tab1" data-toggle="tab">Section 1</a></li>
+                  <li><a href="#tab2" data-toggle="tab">Section 2</a></li>
+              </ul>
+              <div class="tab-content">
+                  <div class="tab-pane active" id="tab1">
+                    <h4><span class="glyphicon glyphicon-map-marker"></span>&nbsp;Our Location<small>&nbsp;our favorite coffee shop</small></h4>
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2381.4538051432264!2d-6.282817699999995!3d53.353032899999995!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x48670c2d0d804909%3A0x86d0336b8e935367!2sKirwan+Street+Cottages%2C+Stoneybatter%2C+Dublin!5e0!3m2!1sen!2sie!4v1434994080413" width="100%" height="200" frameborder="0" style="border:0" allowfullscreen></iframe>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quae et iste porro ab ipsam quas mollitia ducimus, quos maxime. Animi tempore dolore expedita nisi molestias? Doloremque earum molestias ipsam sequi.</p>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Officia consectetur nostrum, facilis necessitatibus delectus, deserunt perferendis nisi in nesciunt alias quasi. Excepturi beatae omnis suscipit ad hic, recusandae repellat nam.</p>
+                  </div><!-- tab pane -->
+
+                  <div class="tab-pane" id="tab2">
+                    <h4>A Left Floated Picture <small>Using Placehold.it</small></h4>
+                    <img src="http://placehold.it/140" class="thumbnail pull-left" alt="Placeholder image">
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+                    <hr>
+
+                    <!-- MODAL -- >
+                    <a href="#myModal" role="button" class="btn btn-warning" data-toggle="modal"><span class="glyphicon glyphicon-hand-up"></span> Click for a Modal Window!</a>
+                     <div class="modal fade" id="myModal">
+								        <div class="modal-dialog">
+									         <div class="modal-content">
+										          <div class="modal-header">
+											<button class="close" data-dismiss="modal">&times;</button>
+											
+											<h4 class="modal-title">A Modal Window</h4>
+										</div><!-- end modal-header -->
+										<div class="modal-body">
+											<h4>Text in a modal</h4>
+											
+											<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+											
+											<h4>Popovers in a modal</h4>
+											<a href="#" class="btn btn-danger pop" data-toggle="popover" data-placement="top" data-original-title="You clicked it!" data-content="I knew you would.">Don't click this button</a>
+											
+											<h4>Tooltips in a modal</h4>
+											<a href="" data-original-title="Tooltip" rel="tooltip">This link</a> should have a tooltip, and so should <a href="#" data-original-title="Woohoo!" rel="tooltip">this one</a>!
+											
+											<hr>
+											
+											<p><small class="text-muted">PS. This form doesn't do anything. Just a heads up.</small></p>
+											
+											<form class="form-horizontal">
+												<div class="form-group">
+													<label class="col-lg-2 control-label" for="inputName">Name</label>
+													<div class="col-lg-10">
+														<input class="form-control" id="inputName" placeholder="Name" type="text">
+													</div>
+												</div>
+												
+												<div class="form-group">
+													<label class="col-lg-2 control-label" for="inputEmail">Email</label>
+													<div class="col-lg-10">
+														<input class="form-control" id="inputEmail" placeholder="Email" type="email">
+													</div>
+												</div>
+												
+												<div class="form-group">
+													<label class="col-lg-2 control-label" for="inputMessage">Message</label>
+													<div class="col-lg-10">
+														<textarea class="form-control" id="inputMessage" placeholder="Message" rows="3"></textarea>
+														<button class="btn btn-success pull-right" type="submit">Send!</button>
+													</div>
+												</div>
+											</form>
+										</div><!-- end modal-body -->
+										
+										<div class="modal-footer">
+											<button class="btn btn-default" data-dismiss="modal" type="button">Close</button> <button class="btn btn-primary" type="button">Save changes</button>
+										</div><!-- end modal-footer -->
+									</div><!-- end modal-content -->
+								</div><!-- end modal-dialog -->
+							</div><!-- end myModal --> 
+
+
+            </div><!-- tab pane -->
+          </div><!-- tab content -->
+        </div><!-- tabbable -->
+      </div><!-- col sm 6 -->
+
+      <div class="col-sm-6">
+          <h4>This is Some Text Info</h4>
+          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ab odio, maxime sit doloribus in cupiditate modi velit mollitia! A dolor odit laudantium, maxime doloribus ea sed natus aspernatur ab explicabo!</p>
+
+          <div class="list-group">
+            <a href="#" class="list-group-item">
+              <h4 class="list-group-item-heading">Kale</h4>
+              <p class="list-group-ietm-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quibusdam ea aliquam molestias impedit labore vero dolores?</p>
+            </a>
+            <a href="#" class="list-group-item">
+              <h4 class="list-group-item-heading">Dale</h4>
+              <p class="list-group-ietm-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quibusdam ea aliquam molestias impedit labore vero dolores?</p>
+            </a>
+            <a href="#" class="list-group-item">
+              <h4 class="list-group-item-heading">Sale</h4>
+              <p class="list-group-ietm-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quibusdam ea aliquam molestias impedit labore vero dolores?</p>
+            </a>
+            
+          </div><!-- list group -->
+            
+
+      </div><!-- col sm 6 -->
+
+    </div><!-- row moreInfo -->
+
+    <div class="row" id="moreCourses">
+    </div><!-- row moreCourses -->
+  </div><!-- main container -->
+
+
+  <footer>
+      <!-- not constrained by container -->
+  </footer>
+        <!-- First try for the online version of jQuery-->
+        <script src="http://code.jquery.com/jquery.js"></script>
+        <!-- If no online access, fallback to our hardcoded version of jQuery -->
+        <script>
+        window.jQuery || document.write('<script src="includes/js/jquery-1.8.2.min.js"><\/script>')
+        </script>
+        <!-- Bootstrap JS -->
+        <script src="bootstrap/js/bootstrap.min.js"></script>
+        <!-- Custom JS -->
+        <script src="includes/js/script.js"></script>
+</body>
+
+</html>
